@@ -4351,12 +4351,12 @@ html.no-csstransitions .s-hero__content {
     display: block;
     font-family: var(--font-2);
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 2rem;
     color: white;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: .6rem 1.2rem;
+    padding: 2rem 5rem;
     opacity: 0;
     visibility: hidden;
     -webkit-transform: translateX(-100%);
