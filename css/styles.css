@@ -4356,7 +4356,7 @@ html.no-csstransitions .s-hero__content {
     color: white;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 2rem 5rem;
+    padding: 1rem 2rem;
     opacity: 0;
     visibility: hidden;
     -webkit-transform: translateX(-100%);
@@ -4415,6 +4415,57 @@ html.no-csstransitions .s-hero__content {
     transform: translateX(0);
 }
 
+/* Starts Here */
+
+.folio-item__details-link {
+    z-index: 2;
+    display: block;
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem 2rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    position: absolute;
+    bottom: 3.9rem;
+    right: 3rem;
+}
+
+.folio-item__details-link::before {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 3rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 50%;
+    right: -3rem;
+}
+
+.folio-item__details:hover, 
+.folio-item__details-link:focus, 
+.folio-item__details-link:active {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+.folio-item:hover .folio-item__details-link {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+/* Ends Here */
 
 /* ------------------------------------------------------------------- 
  * responsive:
